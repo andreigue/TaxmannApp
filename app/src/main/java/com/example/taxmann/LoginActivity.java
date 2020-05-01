@@ -36,11 +36,12 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void validate(String userName, String userPass){
-        if((userName == "Admin") && (userPass == "1234")){
+        if((userName.equals("Admin"))  && (userPass.equals("1234"))){
             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
             startActivity(intent);
         }else{
             counter--;
+            Info.setText("No of attempts remaining: "+ String.valueOf(counter));
             if (counter == 0) {
                 Login.setEnabled(false);    //disable the login button
             }
