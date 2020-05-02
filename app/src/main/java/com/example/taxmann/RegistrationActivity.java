@@ -2,6 +2,7 @@ package com.example.taxmann;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -24,7 +25,17 @@ public class RegistrationActivity extends AppCompatActivity {
         regButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                validate();
+                if(validate()){
+                    //uplaod data to the db
+                }
+            }
+        });
+
+        userLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(RegistrationActivity.this, LoginActivity.class));
+
             }
         });
     }
@@ -48,7 +59,7 @@ public class RegistrationActivity extends AppCompatActivity {
         }else{
             result=true;
         }
-        
+
         return result;
     }
 }
