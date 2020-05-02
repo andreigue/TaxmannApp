@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "516986156582",
+    "firebase_url": "https://taxmann-59a99.firebaseio.com",
+    "project_id": "taxmann-59a99",
+    "storage_bucket": "taxmann-59a99.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:516986156582:android:bc2180e1533515ef9358e7",
+        "android_client_info": {
+          "package_name": "com.example.taxmann"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "516986156582-j03cvs60t1ocm06sjto4d1jk55gejm03.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHIND8JchgtFHRwcIPX1O5EMwNWO_sW48"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "516986156582-j03cvs60t1ocm06sjto4d1jk55gejm03.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

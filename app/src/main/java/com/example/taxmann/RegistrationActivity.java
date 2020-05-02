@@ -15,6 +15,7 @@ public class RegistrationActivity extends AppCompatActivity {
     private EditText userName, userEmail, userPassword; //not related to the IDs
     private Button regButton;
     private TextView userLogin;
+    private
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
