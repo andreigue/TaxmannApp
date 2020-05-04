@@ -72,7 +72,7 @@ public class LoginActivity extends AppCompatActivity {
            progressDialog.setMessage("Validation in Progress");
            progressDialog.show();
 
-            firebaseAuth.createUserWithEmailAndPassword(userName, userPass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            firebaseAuth.signInWithEmailAndPassword(userName, userPass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     progressDialog.dismiss();
@@ -82,7 +82,7 @@ public class LoginActivity extends AppCompatActivity {
                     }else{
                         Toast.makeText(LoginActivity.this, "Login Failed", Toast.LENGTH_SHORT).show();
                         counter--;
-//                        Info.setText("No of attempts remaining: "+ String.valueOf(counter));
+                        Info.setText("No of attempts remaining: "+ String.valueOf(counter));
                         if (counter == 0) Login.setEnabled(false);    //disable the login button
                     }
                 }
