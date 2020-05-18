@@ -26,7 +26,14 @@
         <FrameLayout
             android:id="@+id/fragment_container"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="127dp"
+                android:layout_height="81dp"
+                android:text="Main Activirtyyyyy" />
+        </FrameLayout>
     </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
