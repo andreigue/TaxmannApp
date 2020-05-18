@@ -8,4 +8,6 @@ hiding the default actionbar. This tutorial is good because it uses fragments (s
 Found out today that multi-activity apps are not the best for scaling, and Google recommends developping using the single activity 
 architecture (framgent-based). Will look further into that later.
 
-Got an error, will check tmr.
+May 17, 2020:
+Completed tutorials https://www.youtube.com/watch?v=bjYstsO1PgI&list=PLrnPJCHvNZuDQ-jWPw13-wY2J57Z6ep6G&index=3
+and https://www.youtube.com/watch?v=7hUN5gLx1L0 to have functional navigation menu with basic fragments.
