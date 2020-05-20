@@ -8,9 +8,12 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
@@ -20,14 +23,23 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private DrawerLayout drawer;
     FragmentManager fragmentManager;
     FragmentTransaction fragmentTransaction;
+
+    private Button logoutbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+//        logoutbtn = (Button) findViewById(R.id.btn_logout);
+//        logoutbtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                openLogoutActivity();
+//            }
+//        });
+
         androidx.appcompat.widget.Toolbar toolbar = findViewById(R.id.toolbar);
-        //Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        setSupportActionBar(toolbar);   //allow to slide nav. drawer
 
         drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
@@ -35,10 +47,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar,
                 R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-
         drawer.addDrawerListener(toggle);
         toggle.syncState();
-        if(savedInstanceState == null){
+
+        if(savedInstanceState == null){ //takes care of rotation problems
             //load default fragment
             fragmentManager = getSupportFragmentManager();
             fragmentTransaction = fragmentManager.beginTransaction();
@@ -47,6 +59,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             navigationView.setCheckedItem(R.id.nav_newsroom);
         }
     }
+
+//    public void openLogoutActivity(){
+//        Intent intent = new Intent(this, LoginActivity.class);
+//        startActivity(intent);
+//    }
 
     @Override
     public void onBackPressed() {
