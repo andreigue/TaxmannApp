@@ -19,3 +19,6 @@ where that happens, and add a logout button which will change activities, back t
 the hamburger symbol to the left, and an empty page.
 I guess what I did was open an activity from an activity. Now going to check to open activity from fragment
 https://www.google.com/search?q=how+to+open+activity+from+fragment+on+button+click+in+android&oq=how+to+open+activity+from+fra&aqs=chrome.0.0j69i57j0l6.8550j0j7&sourceid=chrome&ie=UTF-8
+
+May 26, 2020:
+
