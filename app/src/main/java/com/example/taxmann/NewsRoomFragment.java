@@ -32,6 +32,7 @@ public class NewsRoomFragment extends Fragment {
             public void onClick(View view) {
 //                Toast.makeText(this, "Logout button clicked.", Toast.LENGTH_SHORT).show();
                 Intent in = new Intent(getActivity(), LoginActivity.class);
+                in.putExtra("some", "some data");
                 startActivity(in);
             }
         });

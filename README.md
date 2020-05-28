@@ -21,4 +21,4 @@ I guess what I did was open an activity from an activity. Now going to check to 
 https://www.google.com/search?q=how+to+open+activity+from+fragment+on+button+click+in+android&oq=how+to+open+activity+from+fra&aqs=chrome.0.0j69i57j0l6.8550j0j7&sourceid=chrome&ie=UTF-8
 
 May 26, 2020:
-
+Procedure from https://www.youtube.com/watch?v=TY-2Cx4IW9A didn't work for some reason.
