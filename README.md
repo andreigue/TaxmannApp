@@ -22,3 +22,6 @@ https://www.google.com/search?q=how+to+open+activity+from+fragment+on+button+cli
 
 May 26, 2020:
 Procedure from https://www.youtube.com/watch?v=TY-2Cx4IW9A didn't work for some reason.
+
+May 31, 2020:
+Created new branch (secAttempt), where I restarted from the firebase db creation step.
