@@ -29,3 +29,4 @@ App hasn't been responding as I wanted, so starting from the beginning in terms 
   https://developer.android.com/guide/components/intents-filters?hl=en (intents)
   https://developer.android.com/jetpack/guide (app architecture)
   https://developer.android.com/guide/components/activities/intro-activities (activities)
+Also watch https://classroom.udacity.com/courses/ud851 
