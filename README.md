@@ -22,3 +22,10 @@ https://www.google.com/search?q=how+to+open+activity+from+fragment+on+button+cli
 
 May 26, 2020:
 Procedure from https://www.youtube.com/watch?v=TY-2Cx4IW9A didn't work for some reason.
+
+September 10, 2020:
+App hasn't been responding as I wanted, so starting from the beginning in terms of learning. Today read https://developer.android.com/guide/components/fundamentals?hl=en, which gives a good overview of many important topics. Next, need to read the following:
+  https://developer.android.com/security?hl=en (about security)
+  https://developer.android.com/guide/components/intents-filters?hl=en (intents)
+  https://developer.android.com/jetpack/guide (app architecture)
+  https://developer.android.com/guide/components/activities/intro-activities (activities)
